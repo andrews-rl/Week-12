@@ -1,0 +1,73 @@
+/* Style for elements with class 'container' */
+.container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #209ab3;
+}
+
+/* Style for elements with class 'button-container' */
+.button-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style for buttons inside elements with class 'button-container' */
+.button-container .btn {
+  margin-right: 10px;
+}
+
+/* Style for elements with class 'custom-form' */
+.custom-form {
+  color: #0dcaf0;
+  padding: 20px;
+  border-radius: 1px;
+  margin-top: 20px;
+}
+
+/* Style for elements with class 'form-group' inside 'custom-form' */
+.custom-form .form-group {
+  margin-bottom: 15px;
+}
+
+/* Style for elements with ID 'jokes' */
+#jokes {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Style for 'h1' elements */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style for elements with ID 'joke-container' */
+#joke-container {
+  margin-bottom: 20px;
+  max-width: 450px;
+}
+
+/* Style for '.card' elements inside 'joke-container' */
+#joke-container .card {
+  background-color: #0dcaf0;
+  color: #fff;
+  padding: 20px;
+  border-radius: 1px;
+}
+
+/* Style for elements with class 'custom-width' */
+.custom-width {
+  width: 100%; /* Set the width to 100% */
+}
+
+/* Style for elements with class 'bordered-image' */
+.bordered-image {
+  border-radius: 5px;
+  border: 1px solid #0dcaf0;
+  box-sizing: content-box;
+}
+
+/* Style for elements with class 'custom-btn' */
+.custom-btn {
+  width: 152px;
+}

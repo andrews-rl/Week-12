@@ -1,0 +1,115 @@
+<!DOCTYPE html> <!-- This declares the document type as HTML5. -->
+<html lang="en"> <!-- This specifies that the document is in English. -->
+
+<head>
+  <meta charset="UTF-8"> <!-- This sets the character encoding to UTF-8 for proper text rendering. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- This configures the viewport for responsive design on various devices. -->
+  <title>Promineo Week 12 CRUD</title> <!-- This sets the title of the webpage, displayed in the browser tab. -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"> <!-- This links an external Bootstrap CSS file for styling. -->
+  <link rel="stylesheet" href="style.css"> <!-- This links an external custom CSS file for additional styling. -->
+</head>
+
+<body class="container"> <!-- This sets the body of the webpage and applies the Bootstrap 'container' class for styling. -->
+
+  <div id="Button" class="button-container"> <!-- This creates a container div with the ID 'Button' and applies the CSS class 'button-container'. -->
+    <button id="Create" type="submit" title="Updates Database With New Contact Info(Must Add Unused ID Number)" class="custom-btn btn-lg mt-3 btn btn-primary p-2">Create</button>
+    <!-- This creates a button with an ID 'Create', type 'submit', a title attribute, and multiple CSS classes for styling. -->
+    <button id="Read" type="submit" title="After Inputting ann Id, the Software Reads, Pulls and Displays Data Below" class="custom-btn btn-lg mt-3 btn btn-secondary p-2">Read</button>
+    <!-- This creates a button with an ID 'Read', type 'submit', a title attribute, and multiple CSS classes for styling. -->
+    <button id="Update" type="submit" title="After Using the Read Button You Can Make Changes and Submit Changes to Database" class="custom-btn btn-lg mt-3 btn btn-success p-2">Update</button>
+    <!-- This creates a button with an ID 'Update', type 'submit', a title attribute, and multiple CSS classes for styling. -->
+    <button id="Delete" type="submit" title="Deletes all Data Within the Fields from Database" class="custom-btn btn-lg mt-3 btn btn-danger p-2">Delete</button>
+    <!-- This creates a button with an ID 'Delete', type 'submit', a title attribute, and multiple CSS classes for styling. -->
+  </div>
+
+  <form class="container custom-form mt-4">
+    <!-- This creates a form element with CSS classes 'container', 'custom-form', and 'mt-4' for styling. -->
+    <div class="row">
+      <!-- This creates a row for organizing form elements. -->
+      <div class="form-group col-md-6">
+        <!-- This creates a form group for a column with a specified width on medium-sized screens. -->
+        <input id="name" type="text" class="form-control border border-info p-2" placeholder="Name">
+        <!-- This creates an input field for a name with specified attributes and CSS classes. -->
+      </div>
+      <div class="form-group col-md-6">
+        <!-- This creates a form group for a column with a specified width on medium-sized screens. -->
+        <input id="id" type="text" class="form-control border border-info p-2" placeholder="ID#">
+        <!-- This creates an input field for an ID with specified attributes and CSS classes. -->
+      </div>
+    </div>
+
+    <div class="form-group">
+      <!-- This creates a form group for an input field. -->
+      <input id="email" type="email" class="form-control border border-info p-2" placeholder="Email">
+      <!-- This creates an input field for an email address with specified attributes and CSS classes. -->
+    </div>
+
+    <div class="form-group">
+      <!-- This creates a form group for a textarea. -->
+      <textarea class="form-control border border-info p-2" id="textarea" rows="4" maxlength="200" placeholder="Notes (up to 200 characters)"></textarea>
+      <!-- This creates a textarea for notes with specified attributes and CSS classes. -->
+    </div>
+
+    <ul id="dataDisplay" class="list-group mt-3">
+      <!-- This creates an unordered list with an ID and CSS classes. -->
+      <!-- Data items will be added here -->
+    </ul>
+
+    <div class="row mt-4">
+      <!-- This creates a row with margin top. -->
+      <div class="col pt-2 d-flex"></div>
+      <!-- This creates a column with padding top and a flex layout. -->
+      <div class="col pt-2 d-flex justify-content-center">
+        <!-- This creates a column with padding top and centers its content. -->
+        <img class="bordered-image" src="monkeyt.jpg" alt="Smart Monkey" width="150" height="150">
+        <!-- This inserts an image with specified attributes. -->
+      </div>
+      <div class="col pt-2 pb-2"></div>
+      <!-- This creates a column with padding top and bottom. -->
+    </div>
+
+    <div class="row mt-4">
+      <!-- This creates a row with margin top. -->
+      <div class="col pt-2"></div>
+      <!-- This creates a column with padding top. -->
+      <div class="col-md-6 pt-2">
+        <!-- This creates a column with padding top and a specified width on medium-sized screens. -->
+        <div id="joke-container" class="container form-control bg-white p-3 custom-width border border-info">
+          <!-- This creates a container with specified attributes. -->
+          <div class="text-center font-weight-bold fs-5">Jokes: Have you heard this one?</div>
+          <!-- This creates centered text with specified attributes. -->
+          <div id="jokes" class="fs-6"></div>
+          <!-- This creates a div with an ID and specified attributes. -->
+        </div>
+      </div>
+      <div class="col pt-2"></div>
+      <!-- This creates a column with padding top. -->
+    </div>
+
+  </form>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <!-- This includes an external JavaScript file for Bootstrap functionality. -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- This includes an external jQuery library. -->
+  <script src="app.js"></script>
+  <!-- This includes an external JavaScript file named 'app.js'. -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+     
+
+
+
+
+
